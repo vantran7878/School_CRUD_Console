@@ -1,0 +1,555 @@
+{
+  "Message": "=== KHỞI TẠO DỮ LIỆU TRƯỜNG HỌC ===",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Đã tạo 8 giáo viên cho các môn học.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Đã tuyển 20 học sinh vào trường.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "\n================ BẮT ĐẦU HỌC KỲ 1 ================",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 1: Teach ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 2: Exam creation ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Charlie tạo đề thi môn Math (Độ khó: Hard, Số câu: 15)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Henry tạo đề thi môn Physics (Độ khó: Easy, Số câu: 15)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Bob tạo đề thi môn Chemistry (Độ khó: Easy, Số câu: 14)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Vuoung Eva tạo đề thi môn Biology (Độ khó: Hard, Số câu: 18)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Hoang David tạo đề thi môn Literature (Độ khó: Easy, Số câu: 13)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Vuoung Bob tạo đề thi môn History (Độ khó: Easy, Số câu: 14)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Tran Grace tạo đề thi môn Geography (Độ khó: Hard, Số câu: 19)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Henry tạo đề thi môn English (Độ khó: Hard, Số câu: 13)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 3: Học sinh làm bài thi ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- BƯỚC 4: Tính GPA học sinh ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Karli | GPA: 2.81",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rice Jazmyn | GPA: 3.13",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rios Kenzie | GPA: 2.63",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Henderson Reagan | GPA: 2.31",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rios Shaniya | GPA: 2.56",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Roach Jazmyn | GPA: 2.88",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Reagan | GPA: 3.00",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jacobs Shaniya | GPA: 1.88",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jacobs Shaniya | GPA: 2.44",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Dulce | GPA: 2.56",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Karli | GPA: 2.69",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Reagan | GPA: 2.31",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Valentine Jazmyn | GPA: 2.25",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jarvis Kenzie | GPA: 2.75",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Reagan | GPA: 2.50",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Marilyn | GPA: 2.75",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Herman Karli | GPA: 3.13",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Henderson Dulce | GPA: 2.94",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Valentine Karli | GPA: 2.25",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Karli | GPA: 2.44",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- BƯỚC 5: Đánh giá giáo viên & Thưởng/Phạt lương ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Pham Charlie (Môn Math) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Nguyen Frank đã gia nhập trường dạy môn Math.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Pham Henry finished job with 6500 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Pham Bob finished job with 6500 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Vuoung Eva (Môn Biology) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Tran Eva đã gia nhập trường dạy môn Biology.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Hoang David finished job with 6500 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Vuoung Bob finished job with 7000 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Tran Grace (Môn Geography) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Nguyen Bob đã gia nhập trường dạy môn Geography.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Pham Henry (Môn English) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Pham Frank đã gia nhập trường dạy môn English.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "================ KẾT THÚC HỌC KỲ 1 ================\n",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "\n================ BẮT ĐẦU HỌC KỲ 2 ================",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 1: Teach ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "---Successfully Teach---",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 2: Exam creation ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Henry tạo đề thi môn Physics (Độ khó: Medium, Số câu: 13)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Bob tạo đề thi môn Chemistry (Độ khó: Easy, Số câu: 15)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Hoang David tạo đề thi môn Literature (Độ khó: Medium, Số câu: 11)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Vuoung Bob tạo đề thi môn History (Độ khó: Hard, Số câu: 10)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Nguyen Frank tạo đề thi môn Math (Độ khó: Medium, Số câu: 17)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Tran Eva tạo đề thi môn Biology (Độ khó: Hard, Số câu: 12)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Nguyen Bob tạo đề thi môn Geography (Độ khó: Easy, Số câu: 17)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Giáo viên Pham Frank tạo đề thi môn English (Độ khó: Easy, Số câu: 14)",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- Phase 3: Học sinh làm bài thi ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- BƯỚC 4: Tính GPA học sinh ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Karli | GPA: 2.69",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rice Jazmyn | GPA: 2.56",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rios Kenzie | GPA: 2.50",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Henderson Reagan | GPA: 2.81",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Rios Shaniya | GPA: 2.81",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Roach Jazmyn | GPA: 2.81",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Reagan | GPA: 3.00",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jacobs Shaniya | GPA: 3.25",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jacobs Shaniya | GPA: 3.00",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Dulce | GPA: 2.63",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Karli | GPA: 2.75",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Reagan | GPA: 2.94",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Valentine Jazmyn | GPA: 2.50",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Jarvis Kenzie | GPA: 2.75",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Moyer Reagan | GPA: 2.44",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Marilyn | GPA: 3.06",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Herman Karli | GPA: 3.06",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Henderson Dulce | GPA: 2.06",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Valentine Karli | GPA: 2.63",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Học sinh Sandoval Karli | GPA: 2.88",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "--- BƯỚC 5: Đánh giá giáo viên & Thưởng/Phạt lương ---",
+  "Level": "WARNING",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Pham Henry finished job with 6100 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Pham Bob finished job with 7000 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Hoang David finished job with 6100 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Vuoung Bob (Môn History) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Tran Bob đã gia nhập trường dạy môn History.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Nguyen Frank finished job with 6100 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[CẢNH BÁO] Giáo viên Tran Eva (Môn Biology) có lương 5000 < 5500 -> ĐÃ NGHỈ VIỆC!",
+  "Level": "ERROR",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "[TUYỂN DỤNG] Giáo viên mới Le Grace đã gia nhập trường dạy môn Biology.",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Nguyen Bob finished job with 6500 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "Teacher Pham Frank finished job with 7000 total salary.",
+  "Level": "INFO",
+  "Timestamp": "2026-09-21 22:22:03"
+}
+{
+  "Message": "================ KẾT THÚC HỌC KỲ 2 ================\n",
+  "Level": "SUCCESS",
+  "Timestamp": "2026-09-21 22:22:03"
+}
