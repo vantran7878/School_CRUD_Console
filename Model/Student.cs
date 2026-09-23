@@ -1,9 +1,9 @@
-namespace School_CRUD_console.Model;
+namespace School_CRUD_console.Models;
 
 using School_CRUD_console.Logger;
 using School_CRUD_console.Constant;
 using School_CRUD_console.Enums;
-using School_CRUD_console.Interface;
+using School_CRUD_console.Interfaces;
 
 public class Student : Person
 {

@@ -1,9 +1,9 @@
 
 using System.Reflection.Metadata;
 using System.Security.Cryptography;
-using School_CRUD_console.Interface;
+using School_CRUD_console.Interfaces;
 
-namespace School_CRUD_console.Model;
+namespace School_CRUD_console.Models;
 
 public abstract class Person
 {

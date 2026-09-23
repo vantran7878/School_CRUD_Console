@@ -1,4 +1,4 @@
-namespace School_CRUD_console.Model;
+namespace School_CRUD_console.Models;
 
 using System;
 using System.Dynamic;

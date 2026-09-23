@@ -1,9 +1,9 @@
 using System.Reflection.Metadata;
-using School_CRUD_console.Interface;
+using School_CRUD_console.Interfaces;
 using School_CRUD_console.Repository;
 using School_CRUD_console.Subjects;
 
-namespace School_CRUD_console.Model;
+namespace School_CRUD_console.Models;
 
 public class School
 {
