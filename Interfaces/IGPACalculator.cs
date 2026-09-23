@@ -1,5 +1,5 @@
-using School_CRUD_console.Model;
-namespace School_CRUD_console.Interface;
+using School_CRUD_console.Models;
+namespace School_CRUD_console.Interfaces;
 
 public interface IGPACalculator
 {

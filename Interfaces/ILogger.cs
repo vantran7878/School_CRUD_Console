@@ -1,6 +1,6 @@
-namespace School_CRUD_console.Interface;
+namespace School_CRUD_console.Interfaces;
 
-using School_CRUD_console.Model;
+using School_CRUD_console.Models;
 using System.Threading.Tasks;
 
 public interface ILogger
