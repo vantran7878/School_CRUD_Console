@@ -4,11 +4,10 @@ using System.Diagnostics;
 using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using School_CRUD_console.Model;
+using School_CRUD_console.Models;
 using School_CRUD_console.Services;
 using School_CRUD_console.Interfaces;
 using School_CRUD_console.Constant;
-using School_CRUD_console.Interface;
 using School_CRUD_console.Logger;
 using School_CRUD_console.GPACalc;
 
