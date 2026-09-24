@@ -4,6 +4,7 @@ using School_CRUD_console.Interfaces;
 using School_CRUD_console.Factory;
 using School_CRUD_console.Subjects;
 using School_CRUD_console.Repository;
+using System.Runtime.CompilerServices;
 
 public class Semester
 {
@@ -31,7 +32,8 @@ public class Semester
 
         await _logger.LogWarning("--- Phase 1: Teach ---");
 
-        foreach (var teacher in _teacherRepo.GetAll())
+        var teachers = await _teacherRepo.GetAllAsync();
+        foreach (var teacher in teachers)
         {
             await teacher.TeachAsync();
         }
@@ -39,7 +41,7 @@ public class Semester
         await _logger.LogWarning("--- Phase 2: Exam creation ---");
 
         List<Exam> global_exams = new List<Exam>();
-        foreach (var teacher in _teacherRepo.GetAll())
+        foreach (var teacher in teachers)
         {
             Exam exam = ExamFactory.CreateExam(teacher.Subject);
             global_exams.Add(exam);
@@ -47,7 +49,8 @@ public class Semester
         }
 
         await _logger.LogWarning("--- Phase 3: Học sinh làm bài thi ---");
-        foreach (var student in _studentRepo.GetAll())
+        var students = await _studentRepo.GetAllAsync();
+        foreach (var student in students)
         {
             foreach (var exam in global_exams)
             {
@@ -56,7 +59,7 @@ public class Semester
         }
 
         await _logger.LogWarning("--- BƯỚC 4: Tính GPA học sinh ---");
-        foreach (var student in _studentRepo.GetAll())
+        foreach (var student in students)
         {
             student.SetGPA();
             await _logger.LogSuccess($"Học sinh {student.Name} | GPA: {student.GPA:F2}");
@@ -67,11 +70,11 @@ public class Semester
         await EvaluateAndManageTeachersAsync();
 
         await _logger.LogSuccess($"================ KẾT THÚC HỌC KỲ {_semesterNumber} ================\n");
-        foreach (var student in _studentRepo.GetAll())
+        foreach (var student in students)
         {
             student.ExamResult.Clear();
         }
-        foreach (var teacher in _teacherRepo.GetAll())
+        foreach (var teacher in teachers)
         {
             teacher.Salary = 6000;
         }
@@ -79,7 +82,7 @@ public class Semester
 
     private async Task EvaluateAndManageTeachersAsync()
     {
-        var teachers = new List<Teacher>(_teacherRepo.GetAll());
+        var teachers = await _teacherRepo.GetAllAsync();
 
         foreach (var teacher in teachers)
         {
@@ -96,10 +99,10 @@ public class Semester
                 await _logger.LogError($"[CẢNH BÁO] Giáo viên {teacher.Name} (Môn {teacher.Subject}) có lương {teacher.Salary} < {_fireThreshold} -> ĐÃ NGHỈ VIỆC!");
 
                 // Xóa giáo viên cũ
-                _teacherRepo.Remove(teacher);
+                await _teacherRepo.DeleteAsync(teacher);
                 // Tuyển giáo viên mới cùng môn học (FR08)
                 Teacher newTeacher = TeacherFactory.CreateRandomTeacher(_logger, teacher.Subject);
-                _teacherRepo.Add(newTeacher);
+                await _teacherRepo.AddAsync(newTeacher);
                 await _logger.LogSuccess($"[TUYỂN DỤNG] Giáo viên mới {newTeacher.Name} đã gia nhập trường dạy môn {newTeacher.Subject}.");
 
             }

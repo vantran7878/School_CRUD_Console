@@ -1,6 +1,7 @@
 using System.Reflection.Metadata;
 using School_CRUD_console.Interfaces;
 using School_CRUD_console.Repository;
+using School_CRUD_console.Services;
 using School_CRUD_console.Subjects;
 
 namespace School_CRUD_console.Models;
@@ -13,10 +14,13 @@ public class School
     private ILogger _logger;
     private IGPACalculator _GPACalc;
 
-    public School(ILogger logger, IGPACalculator GPACalc)
+    private readonly PersistenceService _persistence;
+
+    public School(ILogger logger, IGPACalculator GPACalc, PersistenceService persistence)
     {
         _logger = logger;
         _GPACalc = GPACalc;
+        _persistence = persistence;
     }
 
     public async Task InitializeDataAsync(int studentCount = 10)
@@ -28,14 +32,14 @@ public class School
         foreach (var sub in subjects)
         {
             Teacher t = TeacherFactory.CreateRandomTeacher(_logger, sub);
-            _teacherRepo.Add(t);
+            await _teacherRepo.AddAsync(t);
         }
-        await _logger.LogSuccess($"Đã tạo {_teacherRepo.GetAll().Count} giáo viên cho các môn học.");
+        await _logger.LogSuccess($"Đã tạo {(await _teacherRepo.GetAllAsync()).Count} giáo viên cho các môn học.");
 
         for (int i = 0; i < studentCount; ++i)
         {
             Student s = StudentFactory.CreateRandomStudent(_logger);
-            _studentRepo.Add(s);
+            await _studentRepo.AddAsync(s);
         }
         await _logger.LogSuccess($"Đã tuyển {studentCount} học sinh vào trường.");
     }
@@ -47,5 +51,21 @@ public class School
             Semester semester = new Semester(i, _teacherRepo, _studentRepo, _logger, _GPACalc);
             await semester.RunAsync();
         }
+    }
+
+    public async Task<bool> LoadSavedDataAsync()
+    {
+        await _persistence.LoadAllAsync(_studentRepo, _teacherRepo);
+
+        var students = await _studentRepo.GetAllAsync();
+        var teachers = await _teacherRepo.GetAllAsync();
+
+        return students.Any() && teachers.Any();
+
+    }
+
+    public async Task SaveAllDataAsync()
+    {
+        await _persistence.SaveAllAsync(_studentRepo, _teacherRepo);
     }
 }
