@@ -1,5 +1,5 @@
-using School_CRUD_console.Model;
-using School_CRUD_console.Interface;
+using School_CRUD_console.Models;
+using School_CRUD_console.Interfaces;
 using School_CRUD_console.Subjects;
 using School_CRUD_console.RandomExt;
 
