@@ -1,4 +1,4 @@
-using School_CRUD_console.Interface;
+using School_CRUD_console.Interfaces;
 namespace School_CRUD_console.GPACalc;
 
 public class GPA4Calculator : IGPACalculator
