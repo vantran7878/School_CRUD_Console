@@ -2,7 +2,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-001",
-    "GPA": 3.375,
+    "GPA": 2.5,
     "Major": "Ethnicity \u0026 Race Studies",
     "Name": "Rios Shaniya",
     "Age": 32,
@@ -11,7 +11,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-002",
-    "GPA": 2.9375,
+    "GPA": 2.5,
     "Major": "Philosophical traditions and school",
     "Name": "Jarvis Mareli",
     "Age": 30,
@@ -20,7 +20,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-003",
-    "GPA": 3.0,
+    "GPA": 2.6875,
     "Major": "Artificial intelligence",
     "Name": "Rice Pranav",
     "Age": 49,
@@ -29,7 +29,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-004",
-    "GPA": 2.5,
+    "GPA": 2.875,
     "Major": "Artificial intelligence",
     "Name": "Ryan Aiyana",
     "Age": 46,
@@ -38,7 +38,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-005",
-    "GPA": 2.625,
+    "GPA": 2.5,
     "Major": "Culinary arts",
     "Name": "Ryan Kenzie",
     "Age": 56,
@@ -47,7 +47,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-006",
-    "GPA": 2.625,
+    "GPA": 2.9375,
     "Major": "Philosophical traditions and school",
     "Name": "Valentine Pranav",
     "Age": 33,
@@ -56,7 +56,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-007",
-    "GPA": 3.0625,
+    "GPA": 3.0,
     "Major": "Ethnicity \u0026 Race Studies",
     "Name": "Roach Reagan",
     "Age": 48,
@@ -65,7 +65,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-008",
-    "GPA": 2.875,
+    "GPA": 2.125,
     "Major": "History",
     "Name": "Rios Karli",
     "Age": 57,
@@ -74,7 +74,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-009",
-    "GPA": 2.5625,
+    "GPA": 2.0625,
     "Major": "Atmospheric physics",
     "Name": "Herman Mareli",
     "Age": 32,
@@ -83,7 +83,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-010",
-    "GPA": 3.375,
+    "GPA": 2.6875,
     "Major": "History",
     "Name": "Henderson Pranav",
     "Age": 37,
@@ -92,7 +92,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-011",
-    "GPA": 3.125,
+    "GPA": 2.9375,
     "Major": "Artificial intelligence",
     "Name": "Sandoval Mareli",
     "Age": 52,
@@ -101,7 +101,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-012",
-    "GPA": 3.0625,
+    "GPA": 2.3125,
     "Major": "Ethnicity \u0026 Race Studies",
     "Name": "Herman Jazmyn",
     "Age": 33,
@@ -110,7 +110,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-013",
-    "GPA": 3.0625,
+    "GPA": 2.0625,
     "Major": "Philosophical traditions and school",
     "Name": "Jacobs Ryleigh",
     "Age": 55,
@@ -119,7 +119,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-014",
-    "GPA": 2.8125,
+    "GPA": 2.875,
     "Major": "Philosophical traditions and school",
     "Name": "Ryan Kenzie",
     "Age": 52,
@@ -128,7 +128,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-015",
-    "GPA": 2.75,
+    "GPA": 2.9375,
     "Major": "Philosophical traditions and school",
     "Name": "Rice Karli",
     "Age": 36,
@@ -137,7 +137,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-016",
-    "GPA": 2.3125,
+    "GPA": 2.9375,
     "Major": "History",
     "Name": "Sandoval Reagan",
     "Age": 57,
@@ -146,7 +146,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-017",
-    "GPA": 2.6875,
+    "GPA": 2.25,
     "Major": "History",
     "Name": "Davidson Dulce",
     "Age": 55,
@@ -155,7 +155,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-018",
-    "GPA": 2.5625,
+    "GPA": 2.6875,
     "Major": "Culinary arts",
     "Name": "Henderson Pranav",
     "Age": 42,
@@ -164,7 +164,7 @@
   {
     "ExamResult": [],
     "StudentID": "STU-019",
-    "GPA": 2.6875,
+    "GPA": 2.5625,
     "Major": "Atmospheric physics",
     "Name": "Rios Shaniya",
     "Age": 57,
