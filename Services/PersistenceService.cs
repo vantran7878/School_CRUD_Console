@@ -20,11 +20,11 @@ public class PersistenceService
     {
         await _logger.LogWarning("\n=== ĐANG THỰC HIỆN LƯU DỮ LIỆU & SAO LƯU (BACKUP) ===");
 
-        await BackupFileIfExists("students.json");
-        await BackupFileIfExists("teachers.json");
-
         Directory.CreateDirectory(_dataDir);
         Directory.CreateDirectory(_backupDir);
+
+        await BackupFileIfExists("students.json");
+        await BackupFileIfExists("teachers.json");
 
         var options = new JsonSerializerOptions
         {
@@ -61,7 +61,11 @@ public class PersistenceService
 
                 if (students != null)
                 {
-                    foreach (var s in students) await studentRepo.AddAsync(s);
+                    foreach (var s in students)
+                    {
+                        s.SetLogger(_logger);
+                        await studentRepo.AddAsync(s);
+                    }
 
                     await _logger.LogSuccess($"[RECOVERY] Đã khôi phục {students.Count} học sinh từ file.");
                 }
@@ -84,6 +88,7 @@ public class PersistenceService
                 {
                     foreach (var t in teachers)
                     {
+                        t.SetLogger(_logger);
                         await teacherRepo.AddAsync(t);
                     }
                     await _logger.LogSuccess($"[RECOVERY] Đã khôi phục {teachers.Count} giáo viên từ file.");

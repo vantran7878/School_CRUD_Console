@@ -82,7 +82,7 @@ public class Semester
 
     private async Task EvaluateAndManageTeachersAsync()
     {
-        var teachers = await _teacherRepo.GetAllAsync();
+        var teachers = (await _teacherRepo.GetAllAsync()).ToList();
 
         foreach (var teacher in teachers)
         {

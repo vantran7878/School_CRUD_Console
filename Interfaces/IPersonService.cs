@@ -1,5 +1,5 @@
 namespace School_CRUD_console.Interfaces;
-using School_CRUD_console.Model;
+using School_CRUD_console.Models;
 public interface IPersonService
 {
     void Add(Person person);

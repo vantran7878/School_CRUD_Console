@@ -1,13 +1,13 @@
+using System.Text.Json.Serialization;
 using School_CRUD_console.Subjects;
 using School_CRUD_console.Enums;
 using School_CRUD_console.RandomExt;
 using School_CRUD_console.Interfaces;
 using School_CRUD_console.Logger;
-namespace School_CRUD_console.Models;
-
 using School_CRUD_console.Factory;
-using School_CRUD_console.Interfaces;
 using School_CRUD_console.Services;
+
+namespace School_CRUD_console.Models;
 
 public class Teacher : Person
 {
@@ -24,7 +24,16 @@ public class Teacher : Person
         set => _subject = value;
     }
 
-    public Teacher(string name, int age, string ID, string teacherID, Subject subject, int salary, int expYears, ILogger logger) : base(name, age, ID, logger)
+    public Teacher(string name, int age, string persionID, string teacherID, Subject subject, int salary, int expYears, ILogger logger) : base(name, age, persionID, logger)
+    {
+        _subject = subject;
+        _teacherID = teacherID;
+        _salary = salary;
+        _expYears = expYears;
+    }
+
+    [JsonConstructor]
+    public Teacher(string name, int age, string persionID, string teacherID, Subject subject, int salary, int expYears) : base(name, age, persionID, null)
     {
         _subject = subject;
         _teacherID = teacherID;

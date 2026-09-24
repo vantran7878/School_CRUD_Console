@@ -1,6 +1,6 @@
 namespace School_CRUD_console.Factory;
 
-using School_CRUD_console.Model;
+using School_CRUD_console.Models;
 using School_CRUD_console.Enums;
 using School_CRUD_console.Subjects;
 

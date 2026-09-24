@@ -1,9 +1,11 @@
-namespace School_CRUD_console.Models;
-
+using System.Text.Json.Serialization;
 using School_CRUD_console.Logger;
 using School_CRUD_console.Constant;
 using School_CRUD_console.Enums;
 using School_CRUD_console.Interfaces;
+using School_CRUD_console.GPACalc;
+
+namespace School_CRUD_console.Models;
 
 public class Student : Person
 {
@@ -17,11 +19,23 @@ public class Student : Person
 
     private static readonly Random _rand = new Random();
 
-    protected IGPACalculator _GPAcalc;
+    [JsonIgnore]
+    protected IGPACalculator? _GPAcalc;
 
-    public Student(string name, int age, string ID, string studentID, decimal gpa, string major, ILogger logger, IGPACalculator gpaCalculator) : base(name, age, ID, logger)
+    public Student(string name, int age, string persionID, string studentID, decimal gpa, string major, ILogger logger, IGPACalculator gpaCalculator) : base(name, age, persionID, logger)
     {
         (_studentid, _GPA, _major, _logger, _GPAcalc) = (studentID, gpa, major, logger, gpaCalculator);
+    }
+
+    [JsonConstructor]
+    public Student(string name, int age, string persionID, string studentID, decimal gpa, string major) : base(name, age, persionID, null)
+    {
+        (_studentid, _GPA, _major) = (studentID, gpa, major);
+    }
+
+    public void SetGPACalculator(IGPACalculator calculator)
+    {
+        _GPAcalc = calculator;
     }
 
     public string StudentID
@@ -69,6 +83,7 @@ public class Student : Person
 
     public void SetGPA()
     {
+        _GPAcalc ??= new GPA4Calculator();
         List<decimal> gradesList = ExamResult.Select(g => g.Grade).ToList();
 
         this.GPA = _GPAcalc.GPACalculate(gradesList);

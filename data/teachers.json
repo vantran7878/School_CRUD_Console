@@ -1,0 +1,74 @@
+[
+  {
+    "Subject": 0,
+    "TeacherID": "TCH-001",
+    "Salary": 6000,
+    "ExpYears": 17,
+    "Name": "Nguyen Henry",
+    "Age": 50,
+    "PersionID": "CCCD-4378959"
+  },
+  {
+    "Subject": 7,
+    "TeacherID": "TCH-008",
+    "Salary": 6000,
+    "ExpYears": 15,
+    "Name": "Vuoung Alice",
+    "Age": 41,
+    "PersionID": "CCCD-6936520"
+  },
+  {
+    "Subject": 1,
+    "TeacherID": "TCH-009",
+    "Salary": 6000,
+    "ExpYears": 16,
+    "Name": "Le Bob",
+    "Age": 34,
+    "PersionID": "CCCD-6142413"
+  },
+  {
+    "Subject": 5,
+    "TeacherID": "TCH-012",
+    "Salary": 6000,
+    "ExpYears": 14,
+    "Name": "Vuoung Bob",
+    "Age": 30,
+    "PersionID": "CCCD-7519693"
+  },
+  {
+    "Subject": 3,
+    "TeacherID": "TCH-013",
+    "Salary": 6000,
+    "ExpYears": 3,
+    "Name": "Pham Charlie",
+    "Age": 34,
+    "PersionID": "CCCD-1352182"
+  },
+  {
+    "Subject": 4,
+    "TeacherID": "TCH-001",
+    "Salary": 6000,
+    "ExpYears": 4,
+    "Name": "Nguyen Alice",
+    "Age": 40,
+    "PersionID": "CCCD-5243934"
+  },
+  {
+    "Subject": 2,
+    "TeacherID": "TCH-002",
+    "Salary": 6000,
+    "ExpYears": 3,
+    "Name": "Hoang Eva",
+    "Age": 31,
+    "PersionID": "CCCD-4766276"
+  },
+  {
+    "Subject": 6,
+    "TeacherID": "TCH-003",
+    "Salary": 6000,
+    "ExpYears": 11,
+    "Name": "Le David",
+    "Age": 45,
+    "PersionID": "CCCD-6248909"
+  }
+]

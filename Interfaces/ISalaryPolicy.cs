@@ -1,6 +1,6 @@
 namespace School_CRUD_console.ISalary;
 
-using School_CRUD_console.Model;
+using School_CRUD_console.Models;
 
 public interface ISalaryPolicy
 {

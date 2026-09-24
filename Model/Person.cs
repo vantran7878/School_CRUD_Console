@@ -3,6 +3,8 @@ using System.Reflection.Metadata;
 using System.Security.Cryptography;
 using School_CRUD_console.Interfaces;
 
+using System.Text.Json.Serialization;
+
 namespace School_CRUD_console.Models;
 
 public abstract class Person
@@ -15,12 +17,23 @@ public abstract class Person
     static Person() => max_age = 100;
     private string _persionID = string.Empty;
 
-    protected ILogger _logger;
+    [JsonIgnore]
+    protected ILogger? _logger;
 
-    // public Person(string name, int age, string persionID) => (_name, _age, _persionID) = (name, age, persionID);
-    public Person(string name, int age, string persionID, ILogger logger)
+    public Person(string name, int age, string persionID, ILogger? logger)
     {
         (_name, _age, _persionID, _logger) = (name, age, persionID, logger);
+    }
+
+    [JsonConstructor]
+    public Person(string name, int age, string persionID)
+    {
+        (_name, _age, _persionID) = (name, age, persionID);
+    }
+
+    public void SetLogger(ILogger logger)
+    {
+        _logger = logger;
     }
 
     public string Name

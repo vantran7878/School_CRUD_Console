@@ -17,8 +17,18 @@ CompositeLogger compositeLog = new(consoleLog, JsonLog);
 
 IGPACalculator GPACalc = new GPA4Calculator();
 
-School school = new School(compositeLog, GPACalc);
+PersistenceService persistence = new PersistenceService(compositeLog);
 
-await school.InitializeDataAsync(20);
+School school = new School(compositeLog, GPACalc, persistence);
+
+bool hasData = await school.LoadSavedDataAsync();
+
+if (!hasData)
+{
+    await school.InitializeDataAsync(20);
+}
+
 
 await school.StartSimulationAsync(2);
+
+await school.SaveAllDataAsync();
