@@ -3,6 +3,7 @@ using School_CRUD_console.Interfaces;
 using School_CRUD_console.Repository;
 using School_CRUD_console.Services;
 using School_CRUD_console.Subjects;
+using School_CRUD_console.Queue;
 
 namespace School_CRUD_console.Models;
 
@@ -16,11 +17,14 @@ public class School
 
     private readonly PersistenceService _persistence;
 
-    public School(ILogger logger, IGPACalculator GPACalc, PersistenceService persistence)
+    private readonly SchoolEventQueue _queue;
+
+    public School(ILogger logger, IGPACalculator GPACalc, PersistenceService persistence, SchoolEventQueue queue)
     {
         _logger = logger;
         _GPACalc = GPACalc;
         _persistence = persistence;
+        _queue = queue;
     }
 
     public async Task InitializeDataAsync(int studentCount = 10)
@@ -48,7 +52,7 @@ public class School
     {
         for (int i = 1; i <= totalSemesters; i++)
         {
-            Semester semester = new Semester(i, _teacherRepo, _studentRepo, _logger, _GPACalc);
+            Semester semester = new Semester(i, _teacherRepo, _studentRepo, _logger, _GPACalc, _queue);
             await semester.RunAsync();
         }
     }

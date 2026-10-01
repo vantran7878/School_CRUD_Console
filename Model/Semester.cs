@@ -5,6 +5,8 @@ using School_CRUD_console.Factory;
 using School_CRUD_console.Subjects;
 using School_CRUD_console.Repository;
 using System.Runtime.CompilerServices;
+using School_CRUD_console.Queue;
+using School_CRUD_console.Events;
 
 public class Semester
 {
@@ -17,13 +19,16 @@ public class Semester
 
     private readonly IGPACalculator _GPACalc;
 
-    public Semester(int semesterNumber, TeacherRepository teacherRepository, StudentRepository studentRepository, ILogger logger, IGPACalculator GPAcalc)
+    private readonly SchoolEventQueue _queue;
+
+    public Semester(int semesterNumber, TeacherRepository teacherRepository, StudentRepository studentRepository, ILogger logger, IGPACalculator GPAcalc, SchoolEventQueue queue)
     {
         _semesterNumber = semesterNumber;
         _teacherRepo = teacherRepository;
         _studentRepo = studentRepository;
         _logger = logger;
         _GPACalc = GPAcalc;
+        _queue = queue;
     }
 
     public async Task RunAsync()
@@ -50,13 +55,9 @@ public class Semester
 
         await _logger.LogWarning("--- Phase 3: Học sinh làm bài thi ---");
         var students = await _studentRepo.GetAllAsync();
-        foreach (var student in students)
-        {
-            foreach (var exam in global_exams)
-            {
-                student.TakeExam(exam);
-            }
-        }
+
+        var examTasks = students.SelectMany(student => global_exams.Select(exam => student.TakeExamAsync(exam, _queue))).ToArray();
+        await Task.WhenAll(examTasks);
 
         await _logger.LogWarning("--- BƯỚC 4: Tính GPA học sinh ---");
         foreach (var student in students)
@@ -100,9 +101,14 @@ public class Semester
 
                 // Xóa giáo viên cũ
                 await _teacherRepo.DeleteAsync(teacher);
+                await _queue.PublishAsync(new TeacherResignedEvent(teacher.Name, teacher.Subject, teacher.Salary));
+
+
                 // Tuyển giáo viên mới cùng môn học (FR08)
                 Teacher newTeacher = TeacherFactory.CreateRandomTeacher(_logger, teacher.Subject);
                 await _teacherRepo.AddAsync(newTeacher);
+                await _queue.PublishAsync(new TeacherHiredEvent(teacher.Name, teacher.Subject));
+
                 await _logger.LogSuccess($"[TUYỂN DỤNG] Giáo viên mới {newTeacher.Name} đã gia nhập trường dạy môn {newTeacher.Subject}.");
 
             }
