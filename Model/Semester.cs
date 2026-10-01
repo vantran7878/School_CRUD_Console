@@ -107,7 +107,7 @@ public class Semester
                 // Tuyển giáo viên mới cùng môn học (FR08)
                 Teacher newTeacher = TeacherFactory.CreateRandomTeacher(_logger, teacher.Subject);
                 await _teacherRepo.AddAsync(newTeacher);
-                await _queue.PublishAsync(new TeacherHiredEvent(teacher.Name, teacher.Subject));
+                await _queue.PublishAsync(new TeacherHiredEvent(newTeacher.Name, newTeacher.Subject));
 
                 await _logger.LogSuccess($"[TUYỂN DỤNG] Giáo viên mới {newTeacher.Name} đã gia nhập trường dạy môn {newTeacher.Subject}.");
 
