@@ -43,7 +43,9 @@ if (!hasData)
 await school.StartSimulationAsync(2);
 
 
-await Task.Delay(1000);
+queue.Complete();
+
+await workerTask;
 
 cts.Cancel();
 
